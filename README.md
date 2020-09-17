@@ -24,7 +24,7 @@ Access to information was to be carried out by token. In all other cases - an er
 ![Output](https://postimg.cc/GHMYqZnz][img]https://i.postimg.cc/GHMYqZnz/cars.jpg)
 
 4) http://127.0.0.1:8000/api-token-auth/renters/ "Authorization:Token 610c911ab6a7823b2beea2b41e96b41e7d763a04" email="ax@pox.com" language="en" name="Mark"
-![Output](https://postimg.cc/pyHDTfBQ][img]https://i.postimg.cc/pyHDTfBQ/201-renter.jpg)
+![Output][url=https://postimg.cc/pyHDTfBQ][img]https://i.postimg.cc/pyHDTfBQ/201-renter.jpg[/img][/url]
 
 5) http http://127.0.0.1:8000/api-token-auth/renters/1/ "Authorization:Token 610c911ab6a7823b2beea2b41e96b41e7d763a04"
 ![Output](https://postimg.cc/TKpbSCRx][img]https://i.postimg.cc/TKpbSCRx/update-renter.jpg)
