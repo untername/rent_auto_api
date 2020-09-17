@@ -9,7 +9,7 @@
 Access to information was to be carried out by token. In all other cases - an error.
 
 # Upload:
-1) git clone https://github.com/django/django.git@45dfb3641aa4d9828a7c5448d11aa67c7cbd7966.
+1) git clone .
 2) pip install -r requirements.txt.
 3) pip install HTTPPie (Optional).
 
