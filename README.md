@@ -9,7 +9,7 @@
 Access to information was to be carried out by token. In all other cases - an error.
 
 # Upload:
-1) git clone .
+1) git clone https://github.com/untername/rent_auto_api.
 2) pip install -r requirements.txt.
 3) pip install HTTPPie (Optional).
 
