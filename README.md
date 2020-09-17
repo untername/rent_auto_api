@@ -15,16 +15,16 @@ Access to information was to be carried out by token. In all other cases - an er
 
 # Examples.
 1) http http://127.0.0.1:8000/api-token-auth/cars/
-![Output](https://postimg.cc/N5Gm8QS5) 
+[Output](https://postimg.cc/N5Gm8QS5) 
 
 2) http post http://127.0.0.1:8000/api-token-auth/ username=kalabala971@gmail.com password=x
-![Output](https://postimg.cc/6TfCG8Hk)
+[Output](https://postimg.cc/6TfCG8Hk)
 
 3) http http://127.0.0.1:8000/api-token-auth/cars/ "Authorization:Token 610c911ab6a7823b2beea2b41e96b41e7d763a04"
-![Output](https://postimg.cc/GHMYqZnz)
+[Output](https://postimg.cc/GHMYqZnz)
 
 4) http://127.0.0.1:8000/api-token-auth/renters/ "Authorization:Token 610c911ab6a7823b2beea2b41e96b41e7d763a04" email="ax@pox.com" language="en" name="Mark"
-![Output](https://postimg.cc/pyHDTfBQ)
+[Output](https://postimg.cc/pyHDTfBQ)
 
 5) http http://127.0.0.1:8000/api-token-auth/renters/1/ "Authorization:Token 610c911ab6a7823b2beea2b41e96b41e7d763a04"
-![Output](https://postimg.cc/TKpbSCRx)
+[Output](https://postimg.cc/TKpbSCRx)
