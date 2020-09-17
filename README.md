@@ -15,16 +15,16 @@ Access to information was to be carried out by token. In all other cases - an er
 
 # Examples.
 1) http http://127.0.0.1:8000/api-token-auth/cars/
-![Output](https://postimg.cc/N5Gm8QS5][img]https://i.postimg.cc/N5Gm8QS5/error401.jpg) 
+![Output](https://postimg.cc/N5Gm8QS5) 
 
 2) http post http://127.0.0.1:8000/api-token-auth/ username=kalabala971@gmail.com password=x
-![Output](https://postimg.cc/6TfCG8Hk][img]https://i.postimg.cc/6TfCG8Hk/set-token.jpg)
+![Output](https://postimg.cc/6TfCG8Hk)
 
 3) http http://127.0.0.1:8000/api-token-auth/cars/ "Authorization:Token 610c911ab6a7823b2beea2b41e96b41e7d763a04"
-![Output](https://postimg.cc/GHMYqZnz][img]https://i.postimg.cc/GHMYqZnz/cars.jpg)
+![Output](https://postimg.cc/GHMYqZnz)
 
 4) http://127.0.0.1:8000/api-token-auth/renters/ "Authorization:Token 610c911ab6a7823b2beea2b41e96b41e7d763a04" email="ax@pox.com" language="en" name="Mark"
-![Output][url=https://postimg.cc/pyHDTfBQ][img]https://i.postimg.cc/pyHDTfBQ/201-renter.jpg[/img][/url]
+![Output](https://postimg.cc/pyHDTfBQ)
 
 5) http http://127.0.0.1:8000/api-token-auth/renters/1/ "Authorization:Token 610c911ab6a7823b2beea2b41e96b41e7d763a04"
-![Output](https://postimg.cc/TKpbSCRx][img]https://i.postimg.cc/TKpbSCRx/update-renter.jpg)
+![Output](https://postimg.cc/TKpbSCRx)
