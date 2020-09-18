@@ -24,7 +24,7 @@ class AutoView(ModelViewSet):
 
 class UpdatedToken(ObtainAuthToken):
 
-    def post(self, request, *args, **kwargs):
+    def post(self, request, *args, **kwargs) -> Response:
 
         serializer = self.serializer_class(data=request.data, context={'request': request})
         serializer.is_valid(raise_exception=True)

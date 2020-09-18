@@ -1,13 +1,13 @@
 from rest_framework import serializers
 from .models import Auto, Renter, UpdatedUser
-from typing import Type, Tuple
+from typing import Type, Tuple, Dict
 
 
 class UserSerializer(serializers.ModelSerializer):
 
     """ Сериализатор пользователя """
 
-    def create(self, validated_data):
+    def create(self, validated_data) -> UpdatedUser:
         user = UpdatedUser(
             email=validated_data['email'],
             username=validated_data['username'])
@@ -18,8 +18,8 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model: Type[UpdatedUser] = UpdatedUser
-        fields = "__all__"
-        extra_kwargs = {'password': {'write_only': True}}
+        fields: str = "__all__"
+        extra_kwargs: Dict = {'password': {'write_only': True}}
 
 
 class AutoSerializer(serializers.HyperlinkedModelSerializer):
