@@ -1,6 +1,6 @@
 # API for the car rental platform
 
-# A task - write an api in which you can:
+# There was a task - write an api in which you can:
 1) Add users.
 2) Add auto.
 3) Change user and car data.
