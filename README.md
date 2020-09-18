@@ -8,6 +8,12 @@
 
 Access to information was to be carried out by token. In all other cases - an error.
 
+# Required fields:
+Auto: name, year, time of entry into the base.
+Tenant: name, mail, language.
+
+The rest of the fields are determined dynamically
+
 # Upload:
 1) git clone https://github.com/untername/rent_auto_api.
 2) pip install -r requirements.txt.
