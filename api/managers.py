@@ -1,14 +1,13 @@
 from django.contrib.auth.base_user import BaseUserManager
 from django.utils.translation import ugettext_lazy as lazy
-from .models import UpdatedUser
-from typing import Union, Any
+from typing import Union, Any, Type
 
 
 class CustomUserManager(BaseUserManager):
 
     """ Менеджер для переопределенной модели юзера. """
 
-    def create_user(self, email: str, password: str, **kwargs: Union[str, Any]) -> UpdatedUser:
+    def create_user(self, email: str, password: str, **kwargs: Union[str, Any]) -> Type[BaseUserManager]:
         if not email:
             raise ValueError(lazy('Please, input email address'))
 
@@ -19,7 +18,7 @@ class CustomUserManager(BaseUserManager):
 
         return user
 
-    def create_superuser(self, email: str, password: str, **params: Union[str, Any]) -> UpdatedUser:
+    def create_superuser(self, email: str, password: str, **params: Union[str, Any]) -> Type[BaseUserManager]:
         params.setdefault('is_staff', True)
         params.setdefault('is_superuser', True)
         params.setdefault('is_active', True)

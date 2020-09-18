@@ -1,6 +1,25 @@
 from rest_framework import serializers
-from .models import Auto, Renter
+from .models import Auto, Renter, UpdatedUser
 from typing import Type, Tuple
+
+
+class UserSerializer(serializers.ModelSerializer):
+
+    """ Сериализатор пользователя """
+
+    def create(self, validated_data):
+        user = UpdatedUser(
+            email=validated_data['email'],
+            username=validated_data['username'])
+
+        user.set_password(validated_data['password'])
+        user.save()
+        return user
+
+    class Meta:
+        model: Type[UpdatedUser] = UpdatedUser
+        fields = "__all__"
+        extra_kwargs = {'password': {'write_only': True}}
 
 
 class AutoSerializer(serializers.HyperlinkedModelSerializer):
@@ -17,7 +36,7 @@ class AutoSerializer(serializers.HyperlinkedModelSerializer):
 class RenterSerializer(serializers.HyperlinkedModelSerializer):
 
     """ Сериализатор для моделей арендаторов. Создает список арендованных авто для каждого арендатора. """
-    
+
     cars = AutoSerializer(many=True, read_only=True)
 
     class Meta:
