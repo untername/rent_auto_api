@@ -10,6 +10,7 @@ Access to information was to be carried out by token. In all other cases - an er
 
 # Required fields:
 Auto: name, year, time of entry into the base.
+
 Tenant: name, mail, language.
 
 The rest of the fields are determined dynamically
