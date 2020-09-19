@@ -15,11 +15,6 @@ Tenant: name, mail, language.
 
 The rest of the fields are determined dynamically
 
-# Upload:
-1) git clone https://github.com/untername/rent_auto_api.
-2) pip install -r requirements.txt.
-3) pip install HTTPPie (Optional).
-
 # Examples.
 1) Check: http http://127.0.0.1:8000/api-token-auth/cars/
 [Output](https://postimg.cc/N5Gm8QS5) 
