@@ -47,7 +47,7 @@ class Auto(models.Model):
     drivers = models.ManyToManyField(Renter, related_name='cars')
     auto_name = models.CharField(max_length=90)
     year = models.DateField()
-    created_at = models.DateTimeField(default=timezone.now())
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self) -> str:
         return self.auto_name
