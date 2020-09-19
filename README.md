@@ -15,6 +15,11 @@ Tenant: name, mail, language.
 
 The rest of the fields are determined dynamically
 
+# Used:
+1) Django REST Framework
+2) SQLite
+3) My empty head
+
 # Examples.
 1) Check: http http://127.0.0.1:8000/api-token-auth/cars/
 [Output](https://postimg.cc/N5Gm8QS5) 
