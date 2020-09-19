@@ -30,3 +30,4 @@ The rest of the fields are determined dynamically
 
 5) Check first renter: http http://127.0.0.1:8000/api-token-auth/renters/1/ "Authorization:Token 610c911ab6a7823b2beea2b41e96b41e7d763a04"
 [Output](https://postimg.cc/TKpbSCRx)
+
